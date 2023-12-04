@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --hero-gr-color: rgba(47, 48, 58, 0.4);
   --footer-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -154,15 +155,34 @@ p {
   color: var(--accent-color);
 }
 
+/* секція */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* секція герой */
 
-.hero {
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(var(--hero-gr-color), var(--hero-gr-color)),
+    url(../images/hero/hero-img.jpg);
+  background-position: center;
+}
+
+.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
+}
 
+.hero {
+  text-align: center;
   color: var(--primary-white-color);
-  background-color: #2f303a;
 }
 
 .hero-title {
@@ -205,11 +225,6 @@ p {
 }
 
 /* секція переваги*/
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .advantages {
   padding-bottom: 0;
