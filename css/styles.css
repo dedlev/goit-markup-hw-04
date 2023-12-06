@@ -100,6 +100,11 @@ p {
   color: #000000;
 }
 
+.navi {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -132,6 +137,7 @@ p {
 
 .info-nav {
   display: flex;
+  align-items: center;
 }
 
 .info-nav .item + .item {
@@ -141,10 +147,6 @@ p {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.navi {
-  display: flex;
   align-items: center;
 }
 
@@ -158,6 +160,16 @@ p {
 .info-nav .link:hover,
 .info-nav .link:focus {
   color: var(--accent-color);
+}
+
+.info-link {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* секція */
@@ -230,6 +242,14 @@ p {
   color: #2f303a;
 }
 
+.hero-btn::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  fill: white;
+  background-image: url(../images/icons/smartphone.svg);
+}
+
 /* сітка для колекції з елементів */
 
 .grid {
@@ -277,6 +297,12 @@ p {
   text-transform: uppercase;
 }
 
+.advantages-item {
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+
 /* напрямки діяльності */
 
 .direction-list .item {
@@ -298,12 +324,12 @@ p {
   background: var(--primary-white-color);
 }
 
-.team-name {
+.member-group {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-title {
+.member-title {
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -315,11 +341,47 @@ p {
   color: var(--title-text-color);
 }
 
-.team-text {
+.member-position {
   text-align: center;
   font-size: 16px;
+  margin-bottom: 16px;
   line-height: 1.2;
   letter-spacing: 0.48px;
+}
+
+/* social icons */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--primary-white-color);
+  color: #afb1b8;
+  border-radius: 50%;
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 /* footer */
