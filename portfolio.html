@@ -19,25 +19,33 @@
     <header class="header-bottom">
       <div class="main-nav container">
         <nav class="navi">
-          <a class="logo" href="./index.html"
+          <a href="./index.html" class="logo"
             >Web<span class="logo-black">Studio</span></a
           >
           <ul class="site-nav list">
             <li class="item"><a class="link" href="./index.html">Студія</a></li>
             <li class="item">
-              <a class="link current" href="./portfolio.html">Портфоліо</a>
+              <a class="link current" href="">Портфоліо</a>
             </li>
             <li class="item"><a class="link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="info-nav list">
           <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="info-link link" href="mailto:info@devstudio.com"
+              ><svg class="info-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+            <a class="info-link link" href="tel:+38-096-111-11-11"
+              ><svg class="info-icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -49,24 +57,26 @@
           <h1 class="visually-hidden">Напрямки діяльності</h1>
           <!--скриється css-->
           <ul class="list-btn list">
-            <li class="item">
+            <li class="item item-btn">
               <button type="button" class="portfolio-btn active">Усі</button>
             </li>
-            <li class="item">
+            <li class="item item-btn">
               <button type="button" class="portfolio-btn">Веб-сайти</button>
             </li>
-            <li class="item">
+            <li class="item item-btn">
               <button type="button" class="portfolio-btn">Додатки</button>
             </li>
-            <li class="item">
+            <li class="item item-btn">
               <button type="button" class="portfolio-btn">Дизайн</button>
             </li>
-            <li class="item">
+            <li class="item item-btn">
               <button type="button" class="portfolio-btn">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list grid">
-            <li class="portfolio-direction grid-item">
+          <!-- <ul class="list grid"> -->
+          <ul class="list portfolio-list">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-1.jpg"
@@ -80,7 +90,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-2.jpg"
@@ -96,7 +107,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-3.jpg"
@@ -110,7 +122,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-4.jpg"
@@ -124,7 +137,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-5.jpg"
@@ -138,7 +152,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-6.jpg"
@@ -152,7 +167,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-7.jpg"
@@ -166,7 +182,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-8.jpg"
@@ -180,7 +197,8 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-direction grid-item">
+            <!-- <li class="portfolio-direction grid-item"> -->
+            <li class="portfolio-direction item">
               <a class="link" href=""
                 ><img
                   src="./images/portfolio/portfolio-9.jpg"
@@ -200,11 +218,11 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <a class="logo-footer logo" href="./index.html"
-          >Web<span class="logo-white">Studio</span></a
-        >
-        <address class="footer-address">
+      <div class="container footer-container">
+        <div class="footer-address element">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-white">Studio</span></a
+          >
           <p>м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="footer-list list">
             <li class="item">
@@ -216,7 +234,64 @@
               <a class="link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
             </li>
           </ul>
-        </address>
+        </div>
+        <div class="footer-socials element">
+          <h3 class="footer-title">приєднуйтесь</h3>
+          <ul class="list socials">
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка instagram"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка twitter"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка Facebook"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка linkedin"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
