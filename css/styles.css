@@ -510,7 +510,8 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .socials-link:hover {
+.footer .socials-link:hover,
+.footer .socials-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
