@@ -265,6 +265,10 @@ p {
   display: flex;
 }
 
+.advantages-list .item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .advantages-list .item + .item {
   margin-left: 30px;
 }
@@ -312,6 +316,10 @@ p {
   display: flex;
 }
 
+.directions-item .item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .directions-item + .item {
   margin-left: 30px;
 }
@@ -332,6 +340,7 @@ p {
 
 .team-member {
   /* --items: 4; */
+  flex-basis: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -410,6 +419,7 @@ p {
 }
 
 .clients-item {
+  flex-basis: calc((100% - 150px) / 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -563,15 +573,11 @@ p {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
 }
 
 .portfolio-direction {
-  width: 370px;
-}
-
-.portfolio-direction {
-  margin: 15px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-dir {
