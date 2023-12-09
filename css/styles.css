@@ -584,6 +584,7 @@ p {
 }
 
 .portfolio-direction {
+  display: flex;
   flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -596,8 +597,8 @@ p {
   background-color: var(--primary-white-color);
 }
 
-.portfolio-direction:hover,
-.portfolio-direction:focus {
+.link-hover:hover,
+.link-hover:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
